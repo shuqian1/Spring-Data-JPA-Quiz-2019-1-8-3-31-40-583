@@ -3,11 +3,8 @@ buildscript {
         springBootVersion = '2.0.0.RELEASE'
     }
     repositories {
-//        maven {
-//            url "http://ec2-54-222-235-15.cn-north-1.compute.amazonaws.com.cn:8081/repository/maven-central/"
-//        }
         maven {
-            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+            url "http://ec2-54-222-235-15.cn-north-1.compute.amazonaws.com.cn:8081/repository/maven-central/"
         }
         mavenCentral()
     }
@@ -26,11 +23,8 @@ apply plugin: 'war'
 apply plugin: 'org.flywaydb.flyway'
 
 repositories {
-//    maven {
-//        url "http://ec2-54-222-235-15.cn-north-1.compute.amazonaws.com.cn:8081/repository/maven-central/"
-//    }
     maven {
-        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        url "http://ec2-54-222-235-15.cn-north-1.compute.amazonaws.com.cn:8081/repository/maven-central/"
     }
 }
 
